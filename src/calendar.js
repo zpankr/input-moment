@@ -31,12 +31,10 @@ export default class Calendar extends Component {
   };
 
   prevMonth = e => {
-    e.preventDefault();
     this.props.onChange(this.props.moment.subtract(1, 'month'));
   };
 
   nextMonth = e => {
-    e.preventDefault();
     this.props.onChange(this.props.moment.add(1, 'month'));
   };
 
